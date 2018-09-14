@@ -168,7 +168,10 @@ function checkAnswer() {
 }
 
 function triggerTextBoxes() {
-
+	let invisiblePhase = document.getElementById("next-phase");
+	invisiblePhase.hidden = false;
+	let submit = document.getElementById("submit");
+	submit.focus();
 }
 
 function checkCoordinates() {
