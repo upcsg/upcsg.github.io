@@ -13,23 +13,51 @@
 		<br />
 
 		<div class="answer-group">
-			<a class="button is-success" onclick="checkAnswer();">Answer</a>
-			<a class="button is-warning" onclick="reset();">Reset</a>
+			<center><a class="button is-success is-center" onclick="checkAnswer();">Answer</a></center>
+			<center><a class="button is-warning is-center" onclick="reset();">Reset</a></center>
 		</div>
 
-		<div id="text-boxes">
-			<div class="field">
-				<div class="control">
-					<input type="text" class="input is-success">
-				</div>
+		<div id="next-phase" hidden>
+			<div id="clue">
+				<center>
+					<span class="is-green">1</span>
+					<span class="is-red">1</span>
+					<span class="is-green">0.</span> 
+					<span class="is-red">2</span> 
+					<span class="is-green">3</span>
+					<span class="is-red">3.</span>
+					<span class="is-green">0</span>
+					<span class="is-red">8</span>
+					<span class="is-green">9</span>
+					<span class="is-red">9</span>
+					<span class="is-green">9</span>
+					<span class="is-red">3</span>
+					<span class="is-green">3</span>
+					<span class="is-red">4</span>
+					<span class="is-red">6</span>
+					<span class="is-green">8</span>
+					<span class="is-red">8</span>
+				</center>
+				
+				
 			</div>
-			<br>
-			
-			<div class="field">
-				<div class="control">
-					<input type="text" class="input is-success">
+			<div id="text-boxes">
+				<div class="field map-answer-field">
+					<div class="control">
+						<input id="first" type="text" class="input is-success">
+					</div>
 				</div>
+				<br>
+
+				<div class="field">
+					<div class="control map-answer-field">
+						<input id="second" type="text" class="input is-danger">
+					</div>
+				</div>
+
+
 			</div>
+			<button id="submit" class="button is-success" onclick="checkCoordinates();">Submit</button>
 		</div>
 		<script src="puzzle.js">
 			

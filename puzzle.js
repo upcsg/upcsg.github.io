@@ -67,7 +67,7 @@ function run(limit) {
 function reset() {
 	removeAllChildNodes(main);
 	initialize()
-	run(levels);
+	run(10);
 	addBlankLayer();
 	addEventListenersToLastLayer();
 }
@@ -169,6 +169,17 @@ function checkAnswer() {
 
 function triggerTextBoxes() {
 
+}
+
+function checkCoordinates() {
+	let first = document.getElementById("first");
+	let second = document.getElementById("second");
+	
+	if (first.value == 10.309938 && second.value == 123.893468) {
+		alert('correct');
+	} else {
+		alert('wrong');
+	}
 }
 /*
 	111

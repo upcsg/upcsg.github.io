@@ -105,3 +105,32 @@ div.main div.boxes:nth-child(-n+400) {
 div.main div.boxes {
 	border-right: 1px solid;
 }
+
+/* answers field*/
+.answer-group a {
+	/*margin: auto;*/
+	text-align: center;
+	width: 100px;
+	margin: 10px 1px;
+}
+.map-answer-field {
+	width: 300px;
+	margin: auto;
+}
+
+#id {
+	text-align: center;
+	margin: auto;
+}
+
+.is-green {
+	color: green;
+}
+
+.is-red {
+	color: red;
+}
+
+#submit {
+	margin: auto;	
+}
