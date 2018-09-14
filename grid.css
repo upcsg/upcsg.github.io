@@ -1,0 +1,109 @@
+div.main {
+	width: 500px;
+	height: 500px;
+	margin: auto;
+}
+
+#button-group {
+	margin: auto;
+}
+/*.main {
+	border-left: 1px solid;
+}*/
+
+div div {
+	width: 25px;
+	height: 25px;
+	outline 1px solid;
+	float: left;
+}
+
+div div:nth-child(-n+20) {
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+}
+
+div div:nth-child(-n+40) {
+	border-bottom: 1px solid;
+}
+
+div div:nth-child(-n+60) {
+	border-bottom: 1px solid;
+}
+
+div div:nth-child(-n+80) {
+	border-bottom: 1px solid;
+}
+
+div div:nth-child(-n+100) {
+	border-bottom: 1px solid;
+}
+
+div div:nth-child(-n+120) {
+	border-bottom: 1px solid;
+}
+
+div div:nth-child(-n+140) {
+	border-bottom: 1px solid;
+}
+
+div div:nth-child(-n+160) {
+	border-bottom: 1px solid;
+}
+
+div div:nth-child(-n+180) {
+	border-bottom: 1px solid;
+}
+
+div div:nth-child(-n+200) {
+	border-bottom: 1px solid;
+}
+
+div div:nth-child(-n+220) {
+	border-bottom: 1px solid;
+}
+
+div div:nth-child(-n+240) {
+	border-bottom: 1px solid;
+}
+
+div div:nth-child(-n+260) {
+	border-bottom: 1px solid;
+}
+
+div div:nth-child(-n+280) {
+	border-bottom: 1px solid;
+}
+
+div div:nth-child(-n+300) {
+	border-bottom: 1px solid;
+}
+
+div div:nth-child(-n+320) {
+	border-bottom: 1px solid;
+}
+
+div div:nth-child(-n+340) {
+	border-bottom: 1px solid;
+}
+
+div div:nth-child(-n+360) {
+	border-bottom: 1px solid;
+}
+
+div div:nth-child(-n+380) {
+	border-bottom: 1px solid;
+}
+
+div div:nth-child(-n+400) {
+	border-bottom: 1px solid;
+}
+div div {
+	border-right: 1px solid;
+}
+
+
+
+/*div div:hover {
+	background-color: black;
+}*/
