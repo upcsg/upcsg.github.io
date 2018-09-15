@@ -192,11 +192,29 @@ function checkCoordinates() {
 	let second = document.getElementById("second");
 	
 	if (first.value == 10.309938 && second.value == 123.893468) {
-		alert('correct');
+		alert('Hope you find what you were looking for, spy.');
+		disableTextBoxes();
 		enableMap();
+
+		var map = L.map('map', {
+			center: [10.309938, 123.893468],
+			zoom: 19
+		});
+
+		L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}{r}.png', {
+		    attribution: '© OpenStreetMap contributors',
+		    minZoom: 19,
+		    maxZoom: 19
+		}).addTo(map);
+
 	} else {
 		alert('wrong');
 	}
+}
+
+function disableTextBoxes() {
+	let invisiblePhase = document.getElementById("next-phase");
+	invisiblePhase.hidden = true;
 }
 
 function enableMap() {
