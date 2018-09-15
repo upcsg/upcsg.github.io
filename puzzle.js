@@ -192,7 +192,7 @@ function checkCoordinates() {
 	let second = document.getElementById("second");
 	
 	if (first.value == 10.309938 && second.value == 123.893468) {
-		alert('Hope you find what you\'ll be looking for, spy.');
+		alert('Everything is key. \nHope you find what you\'ll be looking for, spy.');
 		disableTextBoxes();
 		enableMap();
 
