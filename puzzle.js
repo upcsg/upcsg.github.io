@@ -5,25 +5,30 @@ var levels;
 var answerLevel = [];
 reset();
 var answerIsCorrect = false;
+setTimeout(disableMap, 500);
 
 function removeAllChildNodes(node) {
-	while(node.firstChild) {
-		node.removeChild(node.firstChild);
+	if (node != null) {
+		while(node.firstChild) {
+			node.removeChild(node.firstChild);
+		}
 	}
 }
 
 function initialize() {
-	main.className = "main";
-	answerLevel = [];
-	levels = Math.floor(Math.random() * 20 + 2);
-	arr = [];
-	lastLayer = [];
-	for (let i = 0; i < 20; i++) {
-		arr.push(0);
-		answerLevel.push(false);
-	}
+	if(main != null) {
+		main.className = "main";
+		answerLevel = [];
+		levels = Math.floor(Math.random() * 20 + 2);
+		arr = [];
+		lastLayer = [];
+		for (let i = 0; i < 20; i++) {
+			arr.push(0);
+			answerLevel.push(false);
+		}
 
-	arr[arr.length/2] = 1;
+		arr[arr.length/2] = 1;
+	}
 }
 
 function run(limit) {
@@ -67,7 +72,7 @@ function run(limit) {
 function reset() {
 	removeAllChildNodes(main);
 	initialize()
-	run(10);
+	run(20);
 	addBlankLayer();
 	addEventListenersToLastLayer();
 }
@@ -168,10 +173,18 @@ function checkAnswer() {
 }
 
 function triggerTextBoxes() {
+	let main = document.getElementById('main');
+	let check = document.getElementById('check');
+	let reset = document.getElementById('reset');
+
+	main.hidden = true;
+	check.hidden = true;
+	reset.hidden = true;
+
 	let invisiblePhase = document.getElementById("next-phase");
 	invisiblePhase.hidden = false;
-	let submit = document.getElementById("submit");
-	submit.focus();
+	let answer = document.getElementById("answer");
+	answer.focus();
 }
 
 function checkCoordinates() {
@@ -180,19 +193,18 @@ function checkCoordinates() {
 	
 	if (first.value == 10.309938 && second.value == 123.893468) {
 		alert('correct');
+		enableMap();
 	} else {
 		alert('wrong');
 	}
 }
-/*
-	111
-	110
-	101
-	100
-	011
-	010
-	001
-	000
 
-	1st xor (2nd | 3rd)
-*/
+function enableMap() {
+	let m = document.getElementById('map');
+	m.hidden = false;
+}
+
+function disableMap() {
+	let m = document.getElementById('map');
+	m.hidden = true;
+}

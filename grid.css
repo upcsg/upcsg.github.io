@@ -1,15 +1,8 @@
 div.main {
 	width: 500px;
 	height: 500px;
-	margin: auto;
+	margin: 20px auto 100px auto;
 }
-
-#button-group {
-	margin: auto;
-}
-/*.main {
-	border-left: 1px solid;
-}*/
 
 div.answer:hover{
 	background-color: black;
@@ -107,19 +100,9 @@ div.main div.boxes {
 }
 
 /* answers field*/
-.answer-group a {
-	/*margin: auto;*/
-	text-align: center;
-	width: 100px;
-	margin: 10px 1px;
-}
+
 .map-answer-field {
 	width: 300px;
-	margin: auto;
-}
-
-#id {
-	text-align: center;
 	margin: auto;
 }
 
@@ -131,6 +114,16 @@ div.main div.boxes {
 	color: red;
 }
 
-#submit {
-	margin: auto;	
+.submit {
+	align-content: auto;
+	padding: 10px;
+	margin: 3px;	
+	height: 100%;
+}
+
+.divider {
+	position: absolute;
+	top: 100%;
+	padding: 100px;
+	background-color: red;
 }
