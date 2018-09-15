@@ -192,7 +192,7 @@ function checkCoordinates() {
 	let second = document.getElementById("second");
 	
 	if (first.value == 10.309938 && second.value == 123.893468) {
-		alert('Hope you find what you were looking for, spy.');
+		alert('Hope you find what you\'ll be looking for, spy.');
 		disableTextBoxes();
 		enableMap();
 
@@ -212,6 +212,7 @@ function checkCoordinates() {
 			    maxZoom: 19
 			}).addTo(map);
 
+			let marker = L.marker([10.309842, 123.893152]).addTo(map);
 		}, 2000);
 	} else {
 		alert('wrong');
